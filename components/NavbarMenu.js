@@ -7,12 +7,17 @@ class NavBarMenu extends React.Component {
     return (
       <>
         <Navbar bg="dark" variant="dark">
-          <Navbar.Brand>
-            <Link href="/"><a>My Next App</a></Link>
-          </Navbar.Brand>
+          <Navbar.Brand>My Next App</Navbar.Brand>
           <Nav>
-            <Nav.Link>Posts</Nav.Link>
-            <Nav.Link>About</Nav.Link>
+            <Link href="/" passHref>
+              <Nav.Link>Home</Nav.Link>
+            </Link>
+            <Link href="/posts" passHref>
+              <Nav.Link>Posts</Nav.Link>
+            </Link>
+            <Link href="/about" passHref>
+              <Nav.Link>About</Nav.Link>
+            </Link>
           </Nav>
         </Navbar>
       </>
